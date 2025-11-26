@@ -5,7 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Lexon Appliance",
+  title: "Lexon Appliances",
   description: "Premium kitchen and home appliances at pocket-friendly prices.",
   icons: {
     icon: "/lexon_logo.png",

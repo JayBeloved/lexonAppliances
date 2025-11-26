@@ -9,9 +9,10 @@
 
 ## Style Guidelines:
 
-- Primary color: Deep teal (#008080) to convey trust and premium quality.
-- Background color: Light gray (#F0F0F0) to provide a clean and modern backdrop.
-- Accent color: Muted gold (#B8860B) to highlight key information and calls to action, reinforcing the premium aspect.
+- Primary color: Turf Green (#00753b), a rich, bold hue reminiscent of emerald grass after rain, radiating fresh energy and the promise of vibrant life.
+- Accent color: Muted Teal (#a0c8b1), a color that gently fuses cool blue with earthy green, offering subtle freshness and quiet rejuvenation for the senses.
+- Secondary color: Sea Green (#238251), a rich forest green that radiates resilience and organic harmony, conjuring images of flourishing, dew-covered leaves.
+- Background color: White (#ffffff), brilliant and absolute, reflecting endless possibility, new beginnings, and the crispness of a blank page.
 - Body and headline font: 'PT Sans', a humanist sans-serif, providing a modern, yet welcoming feel, that balances the design without overpowering the minimalist visuals
 - Clean and minimalist design, drawing inspiration from Binatone's website. Focus on clear information hierarchy and easy navigation.
 - Subtle animations to provide feedback and improve user engagement (e.g., form submissions, button presses).

@@ -10,12 +10,23 @@ export default function Footer() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Logo className="h-10 w-auto" />
-              <span className="sr-only">Lexon Appliance</span>
+              <span className="sr-only">Lexon Appliances</span>
             </Link>
           </div>
-          <p className="text-center text-sm text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Lexon Appliance. All rights reserved.
-          </p>
+          <div className="text-center text-sm text-muted-foreground md:text-left">
+            <p>© {new Date().getFullYear()} Lexon Appliance. All rights reserved.</p>
+            <p>
+              Designed by{' '}
+              <a
+                href="https://johnjaylawal.site"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline transition-colors hover:text-primary"
+              >
+                John J. Lawal
+              </a>
+            </p>
+          </div>
           <div className="flex gap-4">
             <a
               href="#"

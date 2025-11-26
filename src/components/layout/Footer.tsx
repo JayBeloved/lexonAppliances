@@ -9,13 +9,13 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex-shrink-0">
             <Link href="/">
-              <Logo className="h-10 w-auto" />
+              <Logo className="h-15 w-auto" />
               <span className="sr-only">Lexon Appliances</span>
             </Link>
           </div>
           <div className="text-center text-sm text-muted-foreground md:text-left">
-            <p>© {new Date().getFullYear()} Lexon Appliance. All rights reserved.</p>
-            <p>
+            <p>© {new Date().getFullYear()} Lexon Appliance. All rights reserved.
+      
               Designed by{' '}
               <a
                 href="https://johnjaylawal.site"

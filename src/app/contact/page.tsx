@@ -4,7 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import type { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { contactFormSchema, submitContactForm } from "./actions";
+import { submitContactForm } from "./actions";
+import { contactFormSchema } from "./schema";
 
 import { Button } from "@/components/ui/button";
 import {

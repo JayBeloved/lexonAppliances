@@ -1,13 +1,6 @@
 "use server";
-import { z } from "zod";
-
-export const contactFormSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  message: z
-    .string()
-    .min(10, { message: "Message must be at least 10 characters." }),
-});
+import type { z } from "zod";
+import { contactFormSchema } from "./schema";
 
 // Storing in memory as requested.
 const submissions: z.infer<typeof contactFormSchema>[] = [];
@@ -15,10 +8,19 @@ const submissions: z.infer<typeof contactFormSchema>[] = [];
 export async function submitContactForm(
   data: z.infer<typeof contactFormSchema>
 ) {
+  const parsed = contactFormSchema.safeParse(data);
+
+  if (!parsed.success) {
+    return {
+      success: false,
+      message: "Invalid data provided.",
+    };
+  }
+
   try {
     // In a real app, you'd save this to a database.
-    console.log("New Contact Form Submission:", data);
-    submissions.push(data);
+    console.log("New Contact Form Submission:", parsed.data);
+    submissions.push(parsed.data);
 
     return {
       success: true,

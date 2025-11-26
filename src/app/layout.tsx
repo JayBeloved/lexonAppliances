@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Lexon Appliance",
   description: "Premium kitchen and home appliances at pocket-friendly prices.",
   icons: {
-    icon: "/lexon_logo.jpg",
+    icon: "/lexon_logo.png",
   },
   keywords: [
     "Lexon",

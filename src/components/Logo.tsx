@@ -1,29 +1,16 @@
-import type { SVGProps } from "react";
+import Image from "next/image";
+import React from "react";
 
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo(props: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <svg
-      width="130"
-      height="40"
-      viewBox="0 0 130 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-      aria-label="Lexon Appliance Logo"
-    >
-      <text
-        x="50%"
-        y="50%"
-        dominantBaseline="middle"
-        textAnchor="middle"
-        fontFamily="'PT Sans', sans-serif"
-        fontSize="30"
-        fontWeight="bold"
-        fill="currentColor"
-        className="text-primary"
-      >
-        LEXON
-      </text>
-    </svg>
+    <div {...props}>
+      <Image
+        src="/lexon_logo.png"
+        alt="Lexon Appliance Logo"
+        width={130}
+        height={40}
+        priority
+      />
+    </div>
   );
 }
